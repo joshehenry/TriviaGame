@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+           
+    <div id="quiz">
+        
+    <div class="jumbotron" style="background-color: black;">Hip-Hop Trivia! <h3>Press Start to begin!</h3></div>
+   <button onclick="setTimeout(myFunction, 1000);">Start</button id="Start">
+    <form name="quizF" onsubmit="return submitAnswers()"> <br>
+        <ol>
+            <li id="q1">What is the name of Jay-Z's first album?
+                <br><input type="radio" name="q1" value ="a">Reasonable Doubt</li id="a1">
+                <input type="radio" name="q1" value ="b">In My Lifetime</li id="a1">
+                <br><input type="radio" name="q1" value ="c">Dynasty</li id="a1">
+                <br>
+            <li id="q2">What is the name of Kendrick Lamar's first album?
+                <br><input type="radio" name="q2" value ="a">Damn</li id="a2">
+                <input type="radio" name="q2" value ="b">Good Kid Maad City</li="a2">
+                <br><input type="radio" name="q2" value ="c">Section 80</li id="a2">
+                <br>
+            <li id="q3">J. Cole is extremely popular for what reason?
+                <br><input type="radio" name="q3" value ="a">Colorful assortment of features</li id="a3">
+                <input type="radio" name="q3" value ="b">First multiplatinum artist</li id="a3">
+                <br><input type="radio" name="q3" value ="c">Platinum with no features</li id="a3">
+                <br>
+            <li id="q4">What is the sub-genre of Hip-Hop that is the most popular currently?
+                    <br><input type="radio" name="q4" value ="a">Drill</li id="a4">
+                    <input type="radio" name="q4" value ="b">Snap</li id="a4">
+                    <br><input type="radio" name="q4" value ="c">Trap</li id="a4">
+                    <br>
+            <li id="q5">What city pioneered Hip-Hop?
+                    <br><input type="radio" name="q5" value ="a">Houston</li id="a5"> 
+                    <input type="radio" name="q5" value ="b">Miami</li id="a5">
+                    <br><input type="radio" name="q5" value ="c">New York City</li id="a5">
+
+                    <br>
+            <li id="q6">Drake is popular for appearing on what kid's TV show?
+                    <br><input type="radio" name="q6" value ="a">Degrassi</li id="a6">
+                    <input type="radio" name="q6" value ="b">So Weird</li id="a6">
+                    <br><input type="radio" name="q6" value ="c">Are You Afraid of the Dark?</li id="a6">
+                    <br>
+            <li id="q7">2018 is the year where Hip-Hop beat out Rock and Pop for the most popular music genre.
+                    <br><input type="radio" name="q7" value ="a">True</li id="true">
+                    <input type="radio" name="q7" value ="b">False</li id="false">
+                  
+                    <br>
+            </li>
+        </ol>
+        <input type ="submit" value ="Submit Answers">
+    </form>
+    <div id="timer"></div>
+    <div id="results"></div>
+</div></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+</html>
